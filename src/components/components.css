@@ -1,0 +1,482 @@
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.qwe{
+    background-color: cornflowerblue;
+}
+.main-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.interface-container{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    width: 462px;
+    
+    background-color: rgb(243, 244, 246);
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgb(75, 75, 75);
+}
+.user-greetbanner{
+    margin: 25px 14px 0 14px;
+    padding: 0 0 0 0;
+    display: flex;
+}
+.greet{
+    margin: 3px 0 0 0;
+    padding: 0 0 0 0;
+    font-size: 9px;
+    font-weight: 800;
+    color: rgb(155, 162, 172);
+}
+.user-name{
+    margin: 2px 0 0 0;
+    padding: 0 0 0 0;
+    font-size: 12px;
+    font-weight: 900;
+    font-style: normal;
+    color: rgb(59,72,88);
+
+    
+}
+.user-image{
+    width: 29px;
+    border-radius: 50%;
+    margin-top: 4px;
+    background-color: darkgoldenrod;
+}
+.user-data
+{
+    margin-left:6px;
+}
+
+.display-data
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    margin: 14px 14px 14px 14px;
+    background: rgb(51, 65, 86);
+    border-radius: 10px;
+}
+.balance
+{
+    margin: 13px 0 0 0;
+    font-size: 10px;
+    font-weight: 500;
+    color: white;
+    letter-spacing: 0.8px;
+}
+.amount{
+    color: white;
+    margin: 6px 0 0 0;
+    font-size: larger;
+    font-weight: 500;
+    letter-spacing: 1.4px;
+}
+.profit-loss
+{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.income-data
+{
+    display: flex;
+    flex-direction: row;
+    margin: 8px 15px 10px 3px;
+}
+.expense-data
+{
+    display: flex;
+    flex-direction: row;
+    margin: 8px 3px 10px 15px;
+}
+.income-img
+{
+    background-color: rgba(0, 128, 0, 0.466);
+    width: 15px;
+    border-radius: 50%;
+    margin: 5px 3px 0 0;
+}
+.expense-img
+{
+    background-color: rgba(255, 0, 0, 0.43);
+    width: 15px;
+    border-radius: 50%;
+    margin: 5px 3px 0 0;
+    transform: rotate(180deg);
+}
+
+.income-label
+{
+    margin: 0 0 0 0px;
+    font-size: 10px;
+    color: white;
+    letter-spacing: 0.6px;
+}
+.loss-label
+{
+    margin: 0 0 0 0;
+    font-size: 10px;
+    color: white;
+    letter-spacing: 0.6px;
+}
+.empty{
+    margin: 0 15px 0 15px;
+    font-size: 8px;
+    
+}
+
+.loss-amt{
+    position:relative;
+    color: white;
+    margin: 2px 0 0 0px;
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 0.6px;
+}
+.income-amt
+{
+    position: relative;
+    color: white;
+    margin: 2px 0 0 0px;
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 0.6px;
+}
+.left-panel-transaction
+{
+    margin: 0 10px 12px 10px;
+}
+.transactions
+{
+    display: flex;
+    flex-direction: column;
+    margin: 12px 14px 18px 0;
+}
+.transactions-settings{
+    display: flex;
+    flex-direction: column;
+    margin: 16px 0 0 0;
+}
+.transactions-bar
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 2px;
+}
+.transaction-label
+{
+    margin: 0 0 0 0;
+    font-size: 12px;
+    font-weight: 900;
+    font-style: normal;
+    color: rgb(59,72,88);
+}
+
+.add-trancastion
+{
+    margin: 0 0 0 0;
+    font-size: 12px;
+    font-weight: 900;
+    font-style: normal;
+    color: rgb(59,72,88);
+}
+.transactions-view
+{
+    display: flex;
+    flex-direction: column;
+    height:140px;
+    overflow: auto;
+   
+}
+
+.settings-banner
+{
+    margin: 0 0 0 0;
+    font-size: 11px;
+    font-weight: 700;
+    font-style: normal;
+    color: rgb(86, 97, 111);
+}
+
+.transaction-detail
+{
+    display: flex;
+    flex-direction: row;
+    width: 190px;
+    border-radius: 8px;
+    border-color: rgb(51, 65, 86);
+    border-style: solid; 
+    border-width: 2px; 
+    padding-left: 10px;
+    background-color: rgb(223, 223, 223);
+    margin: 3px 0 3px 3px;
+    justify-content: space-between;
+}
+
+.transaction-detail:hover
+{
+    background-color: rgb(206, 206, 206);
+}
+
+.t{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.amt-date
+{
+    display: flex;
+    flex-direction: column;
+    margin-top: 8px;
+    margin-right: 4px;
+}
+
+.transaction-img
+{
+    width:20px;
+    border-radius: 50%;
+    margin:8px 0 8px 0 ;
+}
+
+.transaction-title
+{
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    font-size: 12px;
+    font-weight: 900;
+    font-style: normal;
+    color: rgb(59,72,88);
+    margin: 10px 0px 0 8px;
+
+}
+.transaction-amt
+{
+    margin: 0 0 0 0;
+    font-size: 12px;
+    font-weight: 900;
+    font-style: normal;
+    color: rgb(59,72,88);
+
+}
+.transaction-date
+{
+    
+    position: relative;
+    margin: 0 0 3px 0;
+    font-size: 9px;
+    font-weight: 900;
+    font-style: normal;
+    color: rgb(104, 122, 143);
+}
+
+.t1
+{
+    align-self:flex-start;
+}
+hr{
+    margin: 0 0 5px 0;
+    width: 98%;
+    align-self: center;
+}
+
+
+
+
+.add-transactions-view
+{
+    display: flex;
+    flex-direction: column;
+    height:140px; 
+    overflow: auto;  
+    align-items: center;
+}
+
+.mcq
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin:0 15px 0 13px;
+}
+
+
+
+
+.ip{
+    margin: 0 0 5px 16px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 0.8px;
+    border-color:rgba(59, 72, 88, 0.699);
+    height:18px;
+    width:180px;
+    
+}
+
+.ip:focus
+{
+    outline-color:rgb(59, 72, 88);
+}
+
+.ip::placeholder
+{
+    margin: 0 0 0 0;
+    font-size: 10px;
+    font-weight: 400;
+    font-style: normal;
+    color: rgba(59, 72, 88, 0.699);
+}
+input[type=date]
+{
+    width: 185px;
+    height: 20px;
+    font-size: 10px;
+    font-weight: 400;
+    font-style: normal;
+    color: rgba(67, 82, 100, 0.593);
+}
+input[type=text]
+{
+    width: 182px;
+    height: 20px;
+    font-size: 10px;
+    font-weight: 400;
+    font-style: normal;
+    color: rgba(67, 82, 100, 0.593);
+}
+input[type=number]
+{
+    width: 182px;
+    height: 20px;
+    font-size: 10px;
+    font-weight: 400;
+    font-style: normal;
+    color: rgba(67, 82, 100, 0.593);
+}
+
+.add-t-income-text{
+    margin: 5.5px 0 0 3px;
+    font-size: 10px;
+    font-weight: 700;
+    font-style: normal;
+    color: rgba(59, 72, 88, 0.806);
+}
+.add-t-expense-text
+{
+    margin: 5.5px 2.6px 0 2px;
+    font-size: 10px;
+    font-weight: 700;
+    font-style: normal;
+    color: rgba(59, 72, 88, 0.806);
+}
+.add-t-income
+{
+    display: flex;
+    flex-direction: row;
+    
+}
+.add-t-expense
+{
+    display: flex;
+    flex-direction: row;
+}
+/* 
+.add-button{
+    margin: 10px 0 0 0;
+    border-radius: 5px;
+    font-size: 10px;
+    font-weight: 700;
+    font-style: normal;
+    color: rgb(59, 72, 88);
+    outline: none;
+} */
+.add-button{
+    margin:6px 0 0 40%;
+    border: none;
+    border-radius: 5px;
+    font-size: 8px;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+    outline: none;
+    font-size: 11px;
+    background: rgba(59, 72, 88, 0.924);
+    padding: 5px 10px 5px 10px;
+    text-decoration: none;
+  }
+  
+  .add-button:hover {
+    background: rgb(59, 72, 88);
+    text-decoration: none;
+  }
+
+  .reset-button{
+    margin: 16px 0 5px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 8px;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+    outline: none;
+    font-size: 11px;
+    background: rgba(59, 72, 88, 0.924);
+    padding: 5px 3px 5px 3px;
+    text-decoration: none;
+  }
+  
+  .reset-button:hover {
+    background: rgb(59, 72, 88);
+    text-decoration: none;
+  }
+
+  .left-panel{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .amt-detail{
+    display: flex;
+    flex-direction: row;
+  }
+  .delete-t
+  {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0px;
+    border-style: none;
+    border-radius: 0 25% 25% 0;
+    background-color: rgb(223, 223, 223);
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 0px 0px 0px 0px;
+    text-decoration: none;
+  }
+
+  .delete-t:hover{
+    background: #ff00004b;
+    text-decoration: none;
+  }
+
+  .button-x
+  {
+    width:15px;
+    margin:0 2px 0 2px;
+    color: rgb(0, 47, 101);
+  }
