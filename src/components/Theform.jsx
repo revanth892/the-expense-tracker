@@ -11,7 +11,7 @@ export default function App() {
             <form onSubmit={handleSubmit(onSubmit)}>
                 <input className="ip" type="text" placeholder="Transaction" {...register("Transaction", {required: true})} />
                 <input className="ip" type="number" placeholder="Amount" {...register("Amount", {required: true})} />
-                <input className="ip" type="datetime" placeholder="Date" {...register("Date", {required: true})} />
+                <input className="ip" type="date" placeholder="Date" {...register("Date", {required: true})} />
                 <div className="mcq">
                     <div className="add-t-income">
                         <input {...register("status", { })} type="radio" value="Income" />
