@@ -1,10 +1,17 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import './components.css';
-
+import { useDispatch} from 'react-redux';
+import { addTransaction } from '../slices/expenseSlicer';
 export default function App() {
-  const { register, handleSubmit} = useForm();
-  const onSubmit = data => console.log(data);
+const dispatch=useDispatch();
+const { register, handleSubmit} = useForm();
+let count=0;  
+const onSubmit = (data) =>{ 
+    console.log(data)
+    data.id=count++;
+    dispatch(addTransaction(data));
+};
   
   return (
     <div className="add-transactions-view">

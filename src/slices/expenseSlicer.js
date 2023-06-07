@@ -11,14 +11,14 @@ const expenseSlicer=createSlice(
                 let tex=0,tic=0;
                 const result = state.data.map(
                     (item)=>{
-                        if(item.status==='expense')
+                        if(item.status==='Expense')
                         {
-                            tex+=item.amt;
+                            tex+=Number(item.Amount);
                             return item;
                         }
                         else
                         {
-                            tic+=item.amt;
+                            tic+=Number(item.Amount);
                             return item;
                         }
                     }
@@ -31,14 +31,14 @@ const expenseSlicer=createSlice(
                 let tex=0,tic=0;
                 const result = state.data.map(
                     (item)=>{
-                        if(item.status==='expense')
+                        if(item.status==='Expense')
                         {
-                            tex+=item.Amount;
+                            tex+=Number(item.Amount);
                             return item;
                         }
                         else
                         {
-                            tic+=item.Amount;
+                            tic+=Number(item.Amount);
                             return item;
                         }
                     }
@@ -48,7 +48,12 @@ const expenseSlicer=createSlice(
             },
             clearAllTransaction(state,action)
             {
-                state.data=[];
+                if(action.payload===1)
+                {
+                    state.data=[];
+                    state.totalexpense=0;
+                    state.totalincome=0;
+                }
             }
         }
     }
