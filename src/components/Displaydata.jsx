@@ -1,5 +1,6 @@
 import React from "react";
 import './components.css';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import upward from './media/upward.png';
 import { useSelector } from "react-redux";
 export default function Displatdata(){
@@ -12,7 +13,7 @@ export default function Displatdata(){
             <p className="balance">Total Balance</p>   
         </div>
         <div>
-            <p className="amount">${income-expense}</p>
+            <p className="amount"><FontAwesomeIcon icon=" fas fa-indian-rupee-sign" size="sm" style={{color: "white",}} />{income-expense}</p>
         </div>
       <div className="profit-loss">
             <div className="income-data">
@@ -21,7 +22,7 @@ export default function Displatdata(){
                 </div>
                 <div className="income">
                     <p className="income-label">Income</p>
-                    <p className="income-amt">${income}</p>
+                    <p className="income-amt"><FontAwesomeIcon icon=" fas fa-indian-rupee-sign" size="sm" style={{color: "white",}} />{income}</p>
                 </div>
             </div>
             <div>
@@ -33,7 +34,7 @@ export default function Displatdata(){
                 </div>
                 <div className="loss">
                     <p className="loss-label">Expense</p>
-                    <p className="loss-amt">${expense}</p>
+                    <p className="loss-amt"><FontAwesomeIcon icon=" fas fa-indian-rupee-sign" size="sm" style={{color: "white",}} />{expense}</p>
                 </div>
             </div>
         </div>

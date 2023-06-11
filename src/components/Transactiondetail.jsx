@@ -1,5 +1,6 @@
 import React from "react";
 import './components.css';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import burger from './media/burger.png';
 import xmark from "./media/xmark.png";
 import { useDispatch } from "react-redux";
@@ -17,7 +18,7 @@ export default function Transactiondetail(props){
             </div>
             <div className="amt-detail">
                 <div className="amt-date">
-                    <div><p className="transaction-amt">${props.Amount}</p></div>
+                    <div><p className="transaction-amt"><FontAwesomeIcon icon=" fas fa-indian-rupee-sign" size="sm" style={{color:  "#394456",}} />{props.Amount}</p></div>
                     <div><p className="transaction-date">&nbsp;</p></div>
                 </div>
                 <button className="delete-t" onClick={()=>{dispatch( deleteTransaction(props.id))}}><img className="button-x"src={xmark} alt='x'/></button>
